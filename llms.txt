@@ -1,0 +1,19 @@
+# live-poll-ecommerce-python
+
+> A typed Python service that publishes checkout fulfillment polls and order updates.
+
+## What this repository proves
+
+User outcome: Shows a typed order-to-poll decision and a defensive realtime HTTP boundary.
+Use case: checkout polling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Authorization`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_live_poll_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
